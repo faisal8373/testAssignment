@@ -8,8 +8,7 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
-export default function Profile() {
+ function Profile() {
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
     null
   );
@@ -26,31 +25,10 @@ export default function Profile() {
     <Box sx={{ flexGrow: 0 }}>
       <Tooltip title="Open settings">
         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-          <Avatar   alt="User Name" src="./src/assets/Avatar.png" />
+          <Avatar sx={{objectFit: 'contain'}}  alt="User Name" src="/Avatar.png" />
         </IconButton>
       </Tooltip>
-      <Menu
-        sx={{ mt: "45px" }}
-        id="menu-appbar"
-        anchorEl={anchorElUser}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-        keepMounted
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-        open={Boolean(anchorElUser)}
-        onClose={handleCloseUserMenu}
-      >
-        {settings.map((setting) => (
-          <MenuItem key={setting} onClick={handleCloseUserMenu}>
-            <Typography textAlign="center">{setting}</Typography>
-          </MenuItem>
-        ))}
-      </Menu>
+   
     </Box>
   );
 }

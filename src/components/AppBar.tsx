@@ -71,10 +71,10 @@ export default function PrimarySearchAppBar() {
               />
             </IconButton>
             <IconButton>
-              <Avatar
-                sx={{ width: 80, height: 80, objectFit: 'contain'}}
+              <img
+            
                 alt="User"
-                src="./src/assets/Avatar.png"
+                src="/Avatar.png"
               />
             </IconButton>
           </Box>

@@ -95,7 +95,7 @@ setUploading(true)
             zIndex: 0,
           }}
           alt="welcome"
-          src="./src/assets/Rectangle.png"
+          src="/Rectangle.png"
         />
 
         <CardContent

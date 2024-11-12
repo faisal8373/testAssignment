@@ -13,7 +13,7 @@ function AddedCheckins() {
       <Typography variant="h6" sx={{ fontWeight: "bold", color:'black', fontSize: '30px' }}>
         Added Checkins
       </Typography>
-      <img alt="Category" src="./src/assets/category.png" /> 
+      <img alt="Category" src="./category.png" /> 
     </Box>
   );
 }

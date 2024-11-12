@@ -92,7 +92,7 @@ const CheckinCards: React.FC<CheckinCardsProps> = ({ loading }) => {
             <CardMedia
               component="img"
               alt="Thumbnail"
-              image={"./src/assets/Image.png"}
+              image={"/Image.png"}
               sx={{
                 m: "5%",
                 width: "90%",
